@@ -1,0 +1,131 @@
+
+
+
+
+.isUnread{
+  width: .8rem;
+  height: .8rem;
+  background-color: red;
+  border-radius: 100vmax;
+  display: inline-block;
+  margin-left: .2rem;
+  
+
+}
+.container{
+  background-color:hsl(0, 0%, 100%) ;
+  border-radius: 5rem;
+  box-shadow:0 4px 2rem  hsl(211, 68%, 94%);
+  padding: 1.5rem 1rem;
+  display: grid;
+  gap: 1.4rem;
+  max-width: 800px;
+  margin-left: 200px;
+}
+
+ .a {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(224, 21%, 14%) ;
+}
+.a:hover{
+  color:hsl(219, 85%, 26%) ;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+h1 {
+  font-size: 1.8rem;
+    }
+.title{
+display: flex;
+align-items: center;
+gap: .5rem;
+}
+
+.badge{
+  background-color:hsl(219, 85%, 26%) ;
+  color:hsl(0, 0%, 100%) ;
+  border-radius: 5rem;
+  padding: 0 .7rem;
+}
+button{
+  border: none;
+  font: inherit;
+background: none;
+cursor: pointer;
+transition: color 200ms ease-in-out;
+color:hsl(219, 14%, 63%) ;
+
+}
+button:hover{
+  color:hsl(219, 85%, 26%) ;
+}
+
+.notification{
+  padding: 1rem;
+  border-radius: .7rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: .5rem;
+cursor: pointer;
+
+
+  &[data-unread="true"]{
+    background-color: hsl(211, 68%, 94%) ;
+    background-color:hsl(210, 60%, 98%) ;
+  }
+}
+
+.post{
+  display: grid;
+  gap: 0.5em ;
+}
+
+
+.post-text{
+  display: flex;
+  align-items: center;
+}
+
+.headshot{
+  width: 50px;
+
+}
+
+.privatemessage{
+  
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+}
+.privatemessage:hover{
+  cursor: pointer;
+  background-color:hsl(211, 68%, 94%) ;
+}
+
+.notification-contant{
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.wrapper{
+  display: grid;
+  gap: 0.6rem ;
+}
+
+.time{
+  color:hsl(219, 14%, 63%) ;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    margin-left: 0px;
+  }
+}
